@@ -1,5 +1,6 @@
 <?php
 
+use App\Events\NewUserRegistered;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +14,9 @@
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Route::get('register', function () {
+    event(new NewUserRegistered('dityaksm21@gmail.com'));
 });

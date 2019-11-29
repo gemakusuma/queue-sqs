@@ -52,9 +52,9 @@ return [
             'driver' => 'sqs',
             'key' => env('SQS_KEY', 'key'),
             'secret' => env('SQS_SECRET', 'secret'),
-            'prefix' => env('SQS_URL', 'prefix'),
+            'prefix' => env('SQS_PREFIX', 'prefix'),
             'queue' => env('SQS_URL', 'queue'),
-            'region' => env('SQS_URL', 'region'),
+            'region' => env('SQS_REGION', 'region'),
         ],
 
 
